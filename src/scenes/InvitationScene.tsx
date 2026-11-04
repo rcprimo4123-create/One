@@ -46,12 +46,13 @@ export function InvitationScene({ entered, onEnter, onContinue }: InvitationScen
                 <SparkleIcon /> for you · five little chapters
               </span>
               <h1 id="invitation-title">
-                A little world,
+                A little place,
                 <br />
-                <em>just for you.</em>
+                <em>where my heart found its words.</em>
               </h1>
               <p className="lede">
-                I could not fit everything into a message. So I built you somewhere to walk through instead.
+                Every little detail has a reason for being here. And if there's one thing I hope you find along the
+                way, it's how much you mean to me.
               </p>
               <div className="invite-actions">
                 <button ref={buttonRef} type="button" className="btn btn--primary" onClick={handle}>
@@ -67,14 +68,14 @@ export function InvitationScene({ entered, onEnter, onContinue }: InvitationScen
                 <span className="eyebrow__num">01</span> the invitation
               </span>
               <h1 id="invitation-title">
-                Hi.
+                Hi, Cupcake
                 <br />
-                <em>I am glad you are here.</em>
+                <em>I hope you know why I made this.</em>
               </h1>
               <div className="invite-letter-lines">
-                <p>I have rewritten this part about six times.</p>
+                <p>I couldn't quite figure out where to begin</p>
                 <p>
-                  So I will say it simply: there is something I have wanted to tell you, and I wanted it to feel
+                  I don't always find the right words at the right time. Sometimes I have so much on my mind and don't know how to say it. But I never want those feelings to go unexpressed, especially when it comes to you.
                   like a place, not a paragraph.
                 </p>
               </div>

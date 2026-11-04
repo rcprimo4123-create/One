@@ -30,22 +30,22 @@ export const flowerNotes: FlowerNote[] = [
   {
     id: 1,
     lead: 'For your laugh',
-    text: 'the one that arrives before you can stop it. My favorite sound, even when I pretend it is not.',
+    text: "I wish I could keep every little moment that makes you laugh. They're some of my favorite moments to be part of.",
   },
   {
     id: 2,
-    lead: 'For your kindness',
-    text: 'you notice people. Really notice them. The world is gentler because you are paying attention.',
+    lead: 'For how you care',
+    text: 'You make an effort, even in ways that might seem small. I notice those things, and I hope you know they never go unappreciated.',
   },
   {
     id: 3,
-    lead: 'For the way you light up',
-    text: 'when you talk about the things you love. I could listen to that version of you for hours.',
+    lead: 'For the side of you I keep discovering',
+    text: "Even after all the things I've learned, there's still so much more about you that I can't wait to discover.",
   },
   {
     id: 4,
     lead: 'For ordinary days',
-    text: 'you make them feel like somewhere I want to stay. No occasion required. Just you.',
+    text: 'You make them feel like somewhere I want to stay. No occasion required. Just you.',
   },
 ];
 
@@ -66,7 +66,7 @@ export const memories: Memory[] = [
     label: 'a call after midnight',
     title: 'The hour that belongs to us',
     caption: 'late-night calls',
-    copy: 'The rest of the world goes quiet, your voice gets soft, and I stop noticing how late it is. Of all the hours, those are the ones I replay the most.',
+    copy: "After everything the day brings, getting to hear your voice is something I always look forward to. It's a small part of my day, but one I wouldn't want to miss.",
     image: '/images/scenes/03-call.webp',
     alt: 'The boy and the girl on a late-night call in their separate bedrooms.',
     point: { x: 0.083, y: 0.305 },
@@ -84,9 +84,9 @@ export const memories: Memory[] = [
   {
     id: 'flowers',
     label: 'the flowers',
-    title: 'The way you looked at them',
+    title: 'A little beauty, just like yours',
     caption: 'the bouquet',
-    copy: 'Like you were surprised anyone had noticed you. As if being seen was a small miracle. I notice everything. I hope you know that by now.',
+    copy: 'Every flower has its own way of being beautiful, and somehow, that made me think of you. Not just because of how lovely you are, but because of all the little things that make you, you.',
     image: '/images/scenes/02-flowers.webp',
     alt: 'The boy holding a bouquet of blush roses.',
     point: { x: 0.071, y: 0.735 },
@@ -94,11 +94,11 @@ export const memories: Memory[] = [
   {
     id: 'movie',
     label: 'movie night',
-    title: 'The credits, but you were asleep',
+    title: 'I never make it to the ending',
     caption: 'movie nights',
-    copy: 'You always fall asleep first. I never mind. I turn the volume down and let you have the quiet. Some nights that is the part I like best.',
+    copy: "Somehow, I'm always the one falling asleep first. But I think there's something nice about ending my day with you, even if I don't always get to see how the movie ends.",
     image: '/images/scenes/03-movie.webp',
-    alt: 'The boy and the girl watching a movie in their rooms, the girl asleep.',
+    alt: 'The boy and the girl watching a movie in their rooms, the boy asleep while the girl smiles at him.',
     point: { x: 0.198, y: 0.875 },
   },
   {
@@ -106,7 +106,7 @@ export const memories: Memory[] = [
     label: 'a page not yet written',
     title: 'A page we have not filled',
     caption: 'whatever comes next',
-    copy: 'I do not know what the future looks like. I just know I keep imagining you in it in the small, ordinary spaces most of all.',
+    copy: 'I do not know what the future looks like. I just know I keep imagining you in it, especially in all the ordinary days I hope we get to share.',
     image: '/images/scenes/03-future.webp',
     alt: 'A scrapbook page of empty polaroids, roses and ribbon.',
     point: { x: 0.632, y: 0.34 },
@@ -184,7 +184,7 @@ export const chapterCopy = {
     hint: 'Tap the bouquet',
     hintDone: 'Every flower, opened.',
     closing:
-      'There. Four flowers, four reasons. The fifth was too big to fit in a bouquet, it is the whole thing. It is you.',
+      "Four flowers, four little things I love about you. Just a few of the reasons I'm glad it's you.",
   },
   
   world: {
