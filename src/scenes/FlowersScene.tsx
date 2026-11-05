@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { burstAt } from '../lib/burst';
 import { flowerNotes, chapterCopy } from '../lib/content';
+import { asset } from '../lib/asset';
 import { ArrowIcon, HeartIcon, SparkleIcon } from '../components/Icons';
 
 interface FlowersSceneProps {
@@ -47,7 +48,7 @@ export function FlowersScene({ onNext }: FlowersSceneProps) {
           <div className="flowers-frame">
             <div className="flowers-image-wrap">
               <img
-                src="/images/scenes/02-flowers.webp"
+                src={asset('/images/scenes/02-flowers.webp')}
                 alt="The boy in his cream heart sweater, blushing as he holds out a bouquet of blush-pink roses."
               />
             </div>

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { ArrowIcon, HeartIcon, SparkleIcon } from '../components/Icons';
 import { burstFrom } from '../lib/burst';
+import { asset } from '../lib/asset';
 import { chapterCopy, distanceNotes } from '../lib/content';
 import { useCoverMarkers } from '../lib/scene-utils';
 
@@ -49,7 +50,7 @@ export function DistanceScene({ onNext }: DistanceSceneProps) {
       <div className="distance-stage" ref={stageRef}>
         <img
           className="distance-stage__image"
-          src="/images/scenes/04-dusk.webp"
+          src={asset('/images/scenes/04-dusk.webp')}
           alt="The boy and the girl standing on separate cloud hills at dusk, a thread of glowing hearts arcing across the sky between them."
         />
         <div className="distance-stage__veil" aria-hidden="true" />

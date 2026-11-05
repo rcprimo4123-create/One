@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { MemoryModal } from '../components/MemoryModal';
 import { HeartIcon, SparkleIcon } from '../components/Icons';
 import { burstFrom } from '../lib/burst';
+import { asset } from '../lib/asset';
 import { chapterCopy, memories, type Memory } from '../lib/content';
 import { useCoverMarkers } from '../lib/scene-utils';
 
@@ -46,7 +47,7 @@ export function WorldScene({ onNext }: WorldSceneProps) {
       <div className="world-stage" ref={stageRef}>
         <img
           className="world-stage__image"
-          src="/images/scenes/03-world.webp"
+          src={asset('/images/scenes/03-world.webp')}
           alt="A pastel fantasy game world with the boy and girl as small adventurers, a quest board, treasure chest, glowing heart crystal, star and friendly blob creatures."
         />
         <div className="world-stage__veil" aria-hidden="true" />

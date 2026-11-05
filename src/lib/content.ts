@@ -1,3 +1,5 @@
+import { asset } from './asset';
+
 export type Stage =
   | 'invitation'
   | 'flowers'
@@ -67,7 +69,7 @@ export const memories: Memory[] = [
     title: 'The hour that belongs to us',
     caption: 'late-night calls',
     copy: "After everything the day brings, getting to hear your voice is something I always look forward to. It's a small part of my day, but one I wouldn't want to miss.",
-    image: '/images/scenes/03-call.webp',
+    image: asset('/images/scenes/03-call.webp'),
     alt: 'The boy and the girl on a late-night call in their separate bedrooms.',
     point: { x: 0.083, y: 0.305 },
   },
@@ -77,7 +79,7 @@ export const memories: Memory[] = [
     title: 'Our little quest',
     caption: 'playing together',
     copy: 'I would play with you everytime because everything is better when you are on the other side of the screen.',
-    image: '/images/scenes/03-quest.webp',
+    image: asset('/images/scenes/03-quest.webp'),
     alt: 'The boy and girl playing a PC game together from two different bedrooms, connected by a glowing heart thread between their screens.',
     point: { x: 0.095, y: 0.46 },
   },
@@ -87,7 +89,7 @@ export const memories: Memory[] = [
     title: 'A little beauty, just like yours',
     caption: 'the bouquet',
     copy: 'Every flower has its own way of being beautiful, and somehow, that made me think of you. Not just because of how lovely you are, but because of all the little things that make you, you.',
-    image: '/images/scenes/02-flowers.webp',
+    image: asset('/images/scenes/02-flowers.webp'),
     alt: 'The boy holding a bouquet of blush roses.',
     point: { x: 0.071, y: 0.735 },
   },
@@ -97,7 +99,7 @@ export const memories: Memory[] = [
     title: 'I never make it to the ending',
     caption: 'movie nights',
     copy: "Somehow, I'm always the one falling asleep first. But I think there's something nice about ending my day with you, even if I don't always get to see how the movie ends.",
-    image: '/images/scenes/03-movie.webp',
+    image: asset('/images/scenes/03-movie.webp'),
     alt: 'The boy and the girl watching a movie in their rooms, the boy asleep while the girl smiles at him.',
     point: { x: 0.198, y: 0.875 },
   },
@@ -107,7 +109,7 @@ export const memories: Memory[] = [
     title: 'A page we have not filled',
     caption: 'whatever comes next',
     copy: 'I do not know what the future looks like. I just know I keep imagining you in it, especially in all the ordinary days I hope we get to share.',
-    image: '/images/scenes/03-future.webp',
+    image: asset('/images/scenes/03-future.webp'),
     alt: 'A scrapbook page of empty polaroids, roses and ribbon.',
     point: { x: 0.632, y: 0.34 },
   },

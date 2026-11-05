@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { burstFrom } from '../lib/burst';
+import { asset } from '../lib/asset';
 import { ArrowIcon, FlourishIcon, HeartIcon, SparkleIcon } from '../components/Icons';
 
 interface InvitationSceneProps {
@@ -22,13 +23,13 @@ export function InvitationScene({ entered, onEnter, onContinue }: InvitationScen
       <div className="invite-art" aria-hidden="true">
         <img
           className={`invite-art__image${entered ? ' is-hidden' : ''}`}
-          src="/images/scenes/01-peek.webp"
+          src={asset('/images/scenes/01-peek.webp')}
           alt=""
           fetchPriority="high"
         />
         <img
           className={`invite-art__image invite-art__image--wave${entered ? ' is-visible' : ''}`}
-          src="/images/scenes/01-wave.webp"
+          src={asset('/images/scenes/01-wave.webp')}
           alt=""
         />
         <div className="invite-art__wash" />

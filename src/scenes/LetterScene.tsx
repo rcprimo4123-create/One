@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { ArrowIcon, HeartIcon, SparkleIcon } from '../components/Icons';
 import { burstFrom } from '../lib/burst';
+import { asset } from '../lib/asset';
 import { chapterCopy, letter, sealReplyCopy } from '../lib/content';
 
 interface LetterSceneProps {
@@ -95,7 +96,7 @@ export function LetterScene({ onFinish, onReplySaved, startOpened = false }: Let
         <figure className="letter-visual">
           <div className="letter-portrait">
             <img
-              src="/images/scenes/05-envelope.webp"
+              src={asset('/images/scenes/05-envelope.webp')}
               alt="The boy in his cream heart sweater, holding a cream envelope sealed with a pink heart toward the viewer."
             />
             <span className="letter-portrait__corner letter-portrait__corner--left" aria-hidden="true" />

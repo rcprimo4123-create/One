@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { ArrowIcon, HeartIcon, SparkleIcon } from '../components/Icons';
 import { burstAt } from '../lib/burst';
+import { asset } from '../lib/asset';
 
 interface FinaleSceneProps {
   hasReply: boolean;
@@ -21,7 +22,7 @@ export function FinaleScene({ hasReply, onReadLetter, onRestart }: FinaleScenePr
   return (
     <section className="scene scene--finale" aria-labelledby="finale-title">
       <div className="finale-art" aria-hidden="true">
-        <img src="/images/scenes/04-together.webp" alt="" />
+        <img src={asset('/images/scenes/04-together.webp')} alt="" />
         <div className="finale-art__veil" />
       </div>
 

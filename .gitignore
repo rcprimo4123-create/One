@@ -1,3 +1,9 @@
+node_modules/
+dist/
+shots/
+vibe_images/
 .edge-qa/
 .edge-qa2/
 .edge-tmp/
+*.log
+.DS_Store

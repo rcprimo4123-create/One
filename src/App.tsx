@@ -10,6 +10,7 @@ import { DistanceScene } from './scenes/DistanceScene';
 import { LetterScene } from './scenes/LetterScene';
 import { FinaleScene } from './scenes/FinaleScene';
 import { chapters, type Stage } from './lib/content';
+import { asset } from './lib/asset';
 import { musicPreference, startMusic, stopMusic } from './lib/music';
 import { useReducedMotion } from './lib/scene-utils';
 
@@ -23,7 +24,7 @@ const PRELOAD = [
   '/images/scenes/04-dusk.webp',
   '/images/scenes/04-together.webp',
   '/images/scenes/05-envelope.webp',
-];
+].map(asset);
 
 const STAGE_LABELS: Record<Stage, string> = {
   invitation: 'Chapter one, the invitation',
