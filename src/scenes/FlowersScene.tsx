@@ -98,7 +98,7 @@ export function FlowersScene({ onNext }: FlowersSceneProps) {
             {revealed === 0 && (
               <div className="flower-notes__empty">
                 <SparkleIcon />
-                <span>{chapterCopy.flowers.hint} — one at a time.</span>
+                <span>{chapterCopy.flowers.hint}, one at a time.</span>
               </div>
             )}
             {flowerNotes.slice(0, revealed).map((note) => (

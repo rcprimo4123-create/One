@@ -117,7 +117,7 @@ export function DistanceScene({ onNext }: DistanceSceneProps) {
               </div>
             </div>
             <h3 key={activeNote.id}>{activeNote.title}</h3>
-            <p key={`copy-${activeNote.id}`}>{activeNote.copy}</p>
+            {activeNote.copy && <p key={`copy-${activeNote.id}`}>{activeNote.copy}</p>}
             {complete ? (
               <div className="distance-final-row" ref={finalRowRef}>
                 <span>{chapterCopy.distance.completeCopy}</span>

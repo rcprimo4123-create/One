@@ -39,8 +39,8 @@ export function FinaleScene({ hasReply, onReadLetter, onRestart }: FinaleScenePr
             I am glad <em>it is you.</em>
           </p>
           <p className="finale-body">
-            Thank you for walking through my little world. Leave the light on in here. I will be right beside
-            you.
+            I'm glad you found your way through this little digital space. Leave the light on in here. I'll be
+            right beside you.
           </p>
 
           {hasReply && (

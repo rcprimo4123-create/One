@@ -33,7 +33,7 @@ export function InvitationScene({ entered, onEnter, onContinue }: InvitationScen
         />
         <div className="invite-art__wash" />
         <div className="invite-art__note">
-          <span>for you —</span>
+          <span>for you,</span>
           <em>with a slightly nervous heart</em>
         </div>
       </div>
@@ -76,7 +76,6 @@ export function InvitationScene({ entered, onEnter, onContinue }: InvitationScen
                 <p>I couldn't quite figure out where to begin</p>
                 <p>
                   I don't always find the right words at the right time. Sometimes I have so much on my mind and don't know how to say it. But I never want those feelings to go unexpressed, especially when it comes to you.
-                  like a place, not a paragraph.
                 </p>
               </div>
               <div className="invite-actions">

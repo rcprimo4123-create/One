@@ -167,7 +167,6 @@ export function LetterScene({ onFinish, onReplySaved, startOpened = false }: Let
                   <br />
                   <em>Christian</em>
                 </p>
-                <p className="letter-paper__ps">P.S. {letter.ps}</p>
                 <span className="letter-paper__flower" aria-hidden="true" />
               </article>
 

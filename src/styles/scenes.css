@@ -1,5 +1,5 @@
 /* =================================
-   Scene 01 — The invitation
+   Scene 01: The invitation
 ================================= */
 
 .scene--invitation {
@@ -299,7 +299,7 @@
 }
 
 /* =================================
-   Scene 02 — The flowers
+   Scene 02: The flowers
 ================================= */
 
 .scene--flowers {
@@ -731,7 +731,7 @@
 }
 
 /* =================================
-   Scene 03 — Our little world
+   Scene 03: Our little world
 ================================= */
 
 .scene--world {
@@ -979,28 +979,33 @@
   place-items: center;
   width: 46px;
   height: 46px;
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  border: none;
   border-radius: 50%;
-  background: rgba(255, 250, 243, 0.84);
-  box-shadow:
-    0 10px 24px -10px rgba(107, 58, 70, 0.5),
-    inset 0 0 0 3px rgba(217, 154, 166, 0.14);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
+  background: transparent;
+  filter:
+    drop-shadow(0 0 2px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 1px 3px rgba(107, 58, 70, 0.45));
   transition:
     transform 0.35s var(--ease),
-    background-color 0.35s ease,
-    color 0.35s ease;
+    color 0.35s ease,
+    filter 0.35s ease;
 }
 
 .hotspot__core svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
+}
+
+.hotspot__core svg path {
+  stroke-width: 1.7;
 }
 
 .hotspot:hover .hotspot__core {
-  transform: scale(1.12);
-  background: #fffaf3;
+  transform: scale(1.18);
+  color: #984959;
+  filter:
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 2px 8px rgba(107, 58, 70, 0.45));
 }
 
 .hotspot__label {
@@ -1042,13 +1047,23 @@
 }
 
 .hotspot.is-hinting .hotspot__core {
-  background: #fffaf3;
-  transform: scale(1.06);
+  transform: scale(1.12);
+  color: #984959;
+  filter:
+    drop-shadow(0 0 9px rgba(255, 250, 243, 0.95))
+    drop-shadow(0 0 2px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 1px 3px rgba(107, 58, 70, 0.45));
 }
 
 .hotspot.is-found .hotspot__core {
-  color: #fff8f0;
-  background: linear-gradient(145deg, #c57b8a, #984959);
+  color: #a8506a;
+  filter:
+    drop-shadow(0 0 2px rgba(255, 255, 255, 0.95))
+    drop-shadow(0 1px 3px rgba(107, 58, 70, 0.45));
+}
+
+.hotspot.is-found .hotspot__core svg {
+  fill: currentColor;
 }
 
 .hotspot.is-found .hotspot__halo {
@@ -1192,8 +1207,8 @@
   }
 
   .hotspot__core svg {
-    width: 15px;
-    height: 15px;
+    width: 17px;
+    height: 17px;
   }
 
   .hotspot__label {
@@ -1303,7 +1318,7 @@
 }
 
 /* =================================
-   Scene 04 — The distance
+   Scene 04: The distance
 ================================= */
 
 .scene--distance {
@@ -1807,7 +1822,7 @@
 }
 
 /* =================================
-   Scene 05 — The letter
+   Scene 05: The letter
 ================================= */
 
 .scene--letter {
@@ -2189,7 +2204,7 @@
   color: var(--rose-deep);
 }
 
-.letter-paper > p:not(.letter-paper__salutation):not(.letter-paper__signature):not(.letter-paper__ps) {
+.letter-paper > p:not(.letter-paper__salutation):not(.letter-paper__signature) {
   margin-bottom: 1.05rem;
   font-family: var(--serif);
   font-size: clamp(1.06rem, 1.25vw, 1.18rem);
@@ -2207,16 +2222,6 @@
 
 .letter-paper__signature em {
   font-style: normal;
-}
-
-.letter-paper__ps {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px dashed rgba(143, 70, 87, 0.2);
-  font-family: var(--hand);
-  font-size: 1.24rem;
-  line-height: 1.35;
-  color: var(--ink-soft);
 }
 
 .letter-paper__flower {
@@ -2478,17 +2483,13 @@
     margin: 1.3rem 0 1rem;
   }
 
-  .letter-paper > p:not(.letter-paper__salutation):not(.letter-paper__signature):not(.letter-paper__ps) {
+  .letter-paper > p:not(.letter-paper__salutation):not(.letter-paper__signature) {
     font-size: 1.03rem;
     line-height: 1.75;
   }
 
   .letter-paper__signature {
     font-size: 1.7rem;
-  }
-
-  .letter-paper__ps {
-    font-size: 1.16rem;
   }
 
   .letter-paper__flower {

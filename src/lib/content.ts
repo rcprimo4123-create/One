@@ -77,8 +77,8 @@ export const memories: Memory[] = [
     title: 'Our little quest',
     caption: 'playing together',
     copy: 'I would play with you everytime because everything is better when you are on the other side of the screen.',
-    image: '/images/scenes/03-world.webp',
-    alt: 'The boy and the girl as little adventurers in a pastel fantasy world.',
+    image: '/images/scenes/03-quest.webp',
+    alt: 'The boy and girl playing a PC game together from two different bedrooms, connected by a glowing heart thread between their screens.',
     point: { x: 0.095, y: 0.46 },
   },
   {
@@ -127,24 +127,24 @@ export const distanceNotes: DistanceNote[] = [
     id: 1,
     label: 'A thought at the end of the day',
     short: 'a thought',
-    title: 'I saved you the last of my day.',
-    copy: 'Not the polished version. The sleepy, unedited one. You are the person I want to hand it to.',
+    title: "I don't think you realize how often you make me smile without even trying.",
+    copy: '',
     point: { x: 0.301, y: 0.475 },
   },
   {
     id: 2,
     label: 'A promise for the quiet hours',
     short: 'a promise',
-    title: 'If you cannot sleep, call me.',
-    copy: 'I will answer. Even if I am already dreaming, I will find my way back for you.',
+    title: "I'll keep learning how to love you better, even on the days I don't get everything right",
+    copy: '',
     point: { x: 0.503, y: 0.39 },
   },
   {
     id: 3,
     label: 'A hope for someday',
     short: 'a someday',
-    title: 'Someday, the same sky will not be the only thing we share.',
-    copy: 'Until then, I will keep sending my heart across it. Same moon. Same stars. Same me, on your side.',
+    title: 'Someday, distance will just be an old story.',
+    copy: "I'll get to be beside you for all the moments we currently share through a screen.",
     point: { x: 0.715, y: 0.455 },
   },
 ];
@@ -159,10 +159,10 @@ export const letter = {
     `I know there's still so much ahead of us, and i get excited thinking about all the things we have yet to experience together. I can't wait for the day when we can finally play, watch movies, and laugh beside each other without a screen between us.`,
     `Until then, I hope we keep making time for each other, finding reasons to smile, and enjoying all the little moments that make us who we are.`,
     `Thank you for being you, for being patient with me, and for making this first month so special. I'm genuinely lucky to have you, and i hope i make you feel just as appreciated and loved as you make me feel.`,
+    `Happy one month of us!`,
     `Here's to us and all the little adventures still waiting for us.`,
   ],
   signature: 'Yours, in all the quiet ways',
-  ps: `This little space may be digital, but it's real, just like everything I feel for you.`,
 };
 
 export const sealReplyCopy = {
